@@ -1,14 +1,14 @@
 {% extends 'accounts/main.html' %}
 
 {% block content %}
-
+ <div class="container">
 <div class="row">
     <div class="col-md">
-        <h5>Products</h5>
+        <h5 class="text-white">Products</h5>
     </div>
 
-    <div class="card card-body">
-        <table class="table">
+    <div class="card card-body bg-dark">
+        <table class="table text-white">
             <tr>
                 <th>Product</th>
                 <th>Category</th>
@@ -24,6 +24,7 @@
             {% endfor %}
         </table>
     </div>
+</div>
 </div>
 
 {% endblock %}

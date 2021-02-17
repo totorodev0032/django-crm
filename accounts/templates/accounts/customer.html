@@ -6,8 +6,8 @@
 <div class="container">
 <div class="row">
 	<div class="col-md">
-		<div class="card card-body">
-			<h5>Customer:</h5>
+		<div class="card card-body bg-dark">
+			<h5 class="text-white">Customer:</h5>
 			<hr>
 			<a class="btn btn-outline-info  btn-sm btn-block" href="">Update Customer</a>
 			<a class="btn btn-outline-danger  btn-sm btn-block" href="">Delete Customer</a>
@@ -16,19 +16,19 @@
 	</div>
 
 	<div class="col-md">
-		<div class="card card-body">
-			<h5>Contact Information</h5>
+		<div class="card card-body bg-dark">
+			<h5 class="text-white">Contact Information</h5>
 			<hr>
-			<p>Email: {{customer.email}} </p>
-			<p>Phone: {{customer.phone}} </p>
+			<p class="text-white">Email: {{customer.email}} </p>
+			<p class="text-white">Phone: {{customer.phone}} </p>
 		</div>
 	</div>
 
 	<div class="col-md">
-		<div class="card card-body">
-			<h5>Total Orders</h5>
+		<div class="card card-body bg-dark">
+			<h5 class="text-white">Total Orders</h5>
 			<hr>
-			<h1 style="text-align: center;padding: 10px"> {{order_count}} </h1>
+			<h1 style="text-align: center;padding: 10px text-white"> {{order_count}} </h1>
 		</div>
 	</div>
 </div>
@@ -37,10 +37,10 @@
 <br>
 <div class="row">
 	<div class="col">
-		<div class="card card-body">
+		<div class="card card-body bg-dark">
 			<form method="get">
 
-		    <button class="btn btn-primary" type="submit">Search</button>
+		    <button class="btn btn-primary text-white" type="submit">Search</button>
 		  </form>
 		</div>
 	</div>
@@ -50,8 +50,8 @@
 
 <div class="row">
 	<div class="col-md">
-		<div class="card card-body">
-			<table class="table table-sm">
+		<div class="card card-body bg-dark">
+			<table class="table table-sm text-white">
 				<tr>
 					<th>Product</th>
 					<th>Category</th>
