@@ -10,7 +10,7 @@
         <h5 class="text-white">CUSTOMERS</h5>
         <hr>
         <div class="card card-body text-white bg-dark ">
-            <a  class = "btn btn-primary btn-sm btn-block btn-warning text-white" href=""> Create Customer</a>
+            <!-- <a  class = "btn btn-primary btn-sm btn-block btn-warning text-white" href=""> Create Customer</a> -->
             <table class="table table-sm text-white">
                 <tr>
                     <th></th>
@@ -34,7 +34,7 @@
         </h5>
         <hr>
         <div class="card card-body bg-dark">
-            <a  class = "btn btn-primary btn-sm btn-block btn-warning text-white" href="">Create Order</a>
+            <a  class = "btn btn-primary btn-sm btn-block btn-warning text-white" href="{% url 'create_order' %}">Create Order</a>
             <table class="table table-sm text-white">
                 <tr>
                     <th>Product</th>
@@ -49,8 +49,8 @@
                         <td> {{ order.product}} </td>
                         <td> {{ order.date_created }} </td>
                         <td> {{ order.status }} </td>
-                        <td> <a class="btn btn-sm btn-info text-white" href="">Update</a> </td>
-                        <td> <a class="btn btn-sm btn-danger"  href="">Danger</a> </td>
+                        <td> <a class="btn btn-sm btn-info text-white" href="{% url 'update_order' order.id %}">Update</a> </td>
+                        <td> <a class="btn btn-sm btn-danger"  href="{% url 'delete_order' order.id %}">Delete</a> </td>
                     </tr>
                 {% endfor %}
                 
